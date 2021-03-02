@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "PawnTank.h"
 #include "PawnTurret.h"
+#include "PawnTank.h"
 #include "Kismet/GameplayStatics.h"
 
 // Called when the game starts or when spawned
