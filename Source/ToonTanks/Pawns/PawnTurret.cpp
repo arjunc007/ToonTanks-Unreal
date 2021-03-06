@@ -17,6 +17,8 @@ void APawnTurret::BeginPlay()
 void APawnTurret::HandleDestruction()
 {
 	Super::HandleDestruction();
+
+	Destroy();
 }
 
 // Called every frame
@@ -35,7 +37,7 @@ void APawnTurret::Tick(float DeltaTime)
 void APawnTurret::CheckFireCondition()
 {
 	//If player == null || player is dead, return
-	if (!PlayerPawn)
+	if (!PlayerPawn || !PlayerPawn->GetIsPlayerAlive())
 	{
 		return;
 	}
