@@ -9,6 +9,7 @@
 class UCapsuleComponent;
 class AProjectileBase;
 class UHealthComponent;
+class UCameraShakeBase;
 
 UCLASS()
 class TOONTANKS_API APawnBase : public APawn
@@ -35,7 +36,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Effects")
 	USoundBase* DeathSound;
 	UPROPERTY(EditAnywhere, Category = "Effects")
-	TSubclassOf<UMatineeCameraShake> DeathShake;
+	TSubclassOf<UCameraShakeBase> DeathShake;
 
 public:
 	// Sets default values for this pawn's properties
